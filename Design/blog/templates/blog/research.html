@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200">
+    <title>学院简介-计算机科学与技术学院</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="{% static 'images/南京工业大学小图标.png' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/research.css'  %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}"/>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="ahead">
+        <p>结构性覆盖的深度学习测试充分性系统</p>
+
+        <p >NEW-BOY团队</p>
+    </div>
+
+   <div class="nav clearfix">
+{#        <div class="logo">#}
+{#            <img src="2.jpg" alt="青年">#}
+{#        </div>#}
+
+         <div class="main">
+                    <a class="shouye"  href="{% url 'index' %}">首页 </a>
+              <a class="shouye " href="{% url 'team' %}">团队介绍 </a>
+              <a class="shouye " href="{% url 'research' %}">研究内容 </a>
+{#              <a class="shouye " href="{% url 'future' %}">未来愿景</a>#}
+            </div>
+
+            <div class="user">
+                <a id="denglu" href="{% url 'login' %}">登录吧</a>
+            </div>
+            <div class="user">
+                <a id="denglu" href="{% url 'register' %}">注册</a>
+            </div>
+
+   </div>
+
+   <!-- 研究内容 -->
+    <div id="content1" class="clearfix wrap">
+        <div id="sidebar">
+            <div class="title">研究内容</div>
+        <dl class="list_dl">
+            <dt class="list_dt current" >
+            <span class="_after"></span>
+            <p ><a href="#yjbj" style="text-decoration:none;color:grey;">研究背景</a></p>
+             </dt>
+
+        <dt class="list_dt">
+            <span class="_after"></span>
+            <p><a href="#yjmb" style="text-decoration:none;color:grey;">研究目标及主要内容</a></p>
+        </dt>
+
+        <dt class="list_dt" >
+            <span class="_after"></span>
+            <p><a href="#tscs" style="text-decoration:none;color:grey;">创新特色概述</a></p>
+        </dt>
+
+        <dt class="list_dt" >
+            <span class="_after"></span>
+            <p>  <a href="#jslx" style="text-decoration:none;color:grey;">研究技术路线</a>  </p>
+        </dt>
+        </dl>
+        </div>
+
+
+
+
+    <div class="mainRight">
+                    <div class="title">结构性覆盖的深度学习测试充分性系统</div>
+
+        <div class="txt">
+            <div id="vsb_content_1001_u51">
+                <div id="vsb_content">
+
+            <p id="yjbj" class="MsoNormal" style="font-size: 25px">
+                1.研究背景：
+            </p>
+            &nbsp;&nbsp;
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;">
+                随着大数据时代的到来，深度学习(Deep Learning, DL)作为人工智能领域的关键技术，正推动着人工智能迅猛发展。深度学习采用“神经元-层-网络”的三级结构模型，神经元是神经网络中的基本计算单元，由若干神经元在宽度方向组合形成层，实现特征的提取及表达功能，由输入层、隐藏层、激活函数和输出层沿着深度方向连接构成网络，最终将输出映射到输出端。当前阶段，以卷积神经网络为基础的各类深度神经网络（Deep Neutral Networks, DNN）逐渐成为了图像处理、医疗诊断、自动驾驶等领域的关键技术。但随着深度神经网络广泛的运用，其质量问题也被重点关注。 由于现实场景的多样化和深度神经网络的复杂化，导致深度学习系统在运用中极有可能输出错误的结果，造成严重的后果。如：在大雪天，自动驾驶系统无法准确识别转弯，导致严重的车祸;由于癌细胞的变异，检测系统无法正确识别肿瘤,导致病人错过治疗最佳时机等等。因此，如何对模型展开充分的测试并尽可能多地找到模型缺陷成为解决此类问题的关键。
+            </p>
+            <img src="{% static 'image/研究内容2.png' %}" alt="">、
+            <img src="{% static 'image/研究内容3.png' %}" alt="">
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;">
+                深度学习测试充分性领域是研究此类问题解决方法的一个重要领域。利用充分性度量指标，测试人员可以衡量测试输入对深度学习系统的测试充分程度。具体地，测试充分性度量指标包含结构性覆盖指标。结构性覆盖指标迁移了传统软件的测试方法，重新定义面向 DNN覆盖指标，如：神经元覆盖、MC/DC 覆盖、路径覆盖等。由于深度学习定义了一种全新的数据驱动程序范式，测试集的表现需要在测试过程中被重点关注，测试集对于测试充分性有很大的影响。因此，如何利用一种具有高度创新性、深度匹配性的深度学习软件测试充分性标准，去建立一个基于结构性覆盖的深度学习测试充分性的系统是亟需解决的问题。
+            </p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;">
+                考虑到上述问题，本项目拟探讨针对深度学习系统测试充分性度量标准研究的可行性，运用一套与深度学习系统高度契合的充分性测试标准和构建测试集方法：一个基于结构性覆盖的深度学习测试充分性系统。本项目的成果将深化和丰富已有的深度学习测试充分性方法研究，增强测试充分性解决实际问题的能力，同时为测试集的构建提出创造性的方法，有利推动深度学习发展。
+            </p>
+
+            &nbsp;&nbsp;
+            <p id="yjmb" class="MsoNormal" style="font-size: 25px">
+                2.研究目标及主要内容：
+            </p>
+            &nbsp;&nbsp;
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;">
+                <span style="font-size:20px; margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;">（1）项目研究目标：</span>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;"> 本项目旨在提出一种切实可行的深度学习测试度量指标，构建具有高度测试充分性的测试集，用来满足当前的深度学习软件测试等多方面的实际需求。本项目在该领域相关研究人员已有研究成果的基础上，设计一种基于结构性覆盖的深度学习软件测试系统。为了实现上述的总体目标，本项目确立了以下三个研究子目标：</p>
+             <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;"> 1. 搜集训练数据和深度神经网络（DNN）模型，保存在数据库中。</p>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;"> 2. 运用一种新型数据驱动程序范式DeepGauge的 多粒度测试标准，通过测试集去测试生成的DNN模型，使系统具有更好的测试充分性和通用性。 </p>
+             <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;"> 3. 对设计出的基于结构性覆盖的深度学习测试充分性系统进行评估，总结。</p>
+            </p>
+
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;">
+                <span style="font-size:20px; margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;">（2）主要研究内容：</span>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;">深度学习定义了一种全新的数据驱动程序范式，我们需要建立神经元级覆盖标准和层级覆盖标准，去评估过程的充分程度和测试机的质量 ，实现DeepGauge中NAC、KMNC、NBC、SNAC、Topk五种测试方法。</p>
+            <img src="{% static 'image/研究内容1.png' %}" alt="" >
+            </p>
+
+            &nbsp;&nbsp;
+            <p id="tscs" class="MsoNormal" style="font-size: 25px">
+                3.创新特色概述：
+            </p>
+            &nbsp;&nbsp;
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;">
+                深度学习定义了一种数据驱动程序范式，这与传统软件有差别（下图说明）所以传统软件的一些标准并不能运用深度学习。因此我们通过基于神经元级和模型级的结构性覆盖测试标准，评估深度学习的测试充分性。
+                <img src="{% static 'image/研究内容4.png' %}" alt="">
+            </p>
+
+            &nbsp;&nbsp;
+            <p id="jslx" class="MsoNormal" style="font-size: 25px">
+                4.项目研究技术路线：
+            </p>
+            &nbsp;&nbsp;
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; text-indent: 24pt; mso-char-indent-count: 2.0;">
+                通过搜集近年来自动驾驶出现的问题和要求标准，建立神经元级覆盖标准和层级覆盖标准，用测试集对功能区（NAC和KMNC反映）、边界区（NBC和SNAC反映）和层级（Topk反映）进行覆盖测试。通过编程方法建立一个基于结构性覆盖的深度学习测试充分性系统，包括网页前端设计和后端数据管理和处理。
+            </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>
+
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="content">
+            <div class="left">
+                <img src="../common.img/logo.png" alt="">
+                <p class="p1"><span>南京工业大学 计算机科学与技术学院</span></p>
+                <p class="p2"><span>耿天羽：19552711698</span></p>
+                <p class="p3"><span>邹杰：110</span></p>
+                <p class="p4"><span>联系邮箱：2107165871@qq.com</span></p>
+                <p class="p5"><span>2107165871或914645408</span></p>
+            </div>
+            <div class="center">
+                <img src="{% static 'image/微信.jpg' %}" alt="">
+                <p>微信二维码</p>
+            </div>
+{#            <div class="right">#}
+{#                <ul>#}
+{#                    <li>留言 / Leave a message</li>#}
+{#                    <li><input type="text" placeholder="姓名"></li>#}
+{#                    <li><input type="text" placeholder="电话"></li>#}
+{#                    <li><textarea name="" id="" placeholder="留言内容"></textarea></li>#}
+{#                    <li><input type="submit" value="提交查询"></li>#}
+{#                </ul>#}
+{#            </div>#}
+        </div>
+    </div>
+    <div class="end">
+        <span>南京工业大学</span>
+    </div>
+</body>
+</html>

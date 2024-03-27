@@ -1,0 +1,206 @@
+/* 头部 */
+
+.ahead{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 50px;
+    background: url('../image/header.jpg') no-repeat center;
+    background-size: cover;
+    Line-height:150px;
+}
+
+/* 解决上方留白 */
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+
+.nav{
+    height: 100px;
+    border-bottom: 2px solid #e8e8e8;
+    /* margin-top:0px; */
+    background-color: white;
+}
+
+.nav .logo{
+    margin:0 0 0 ;
+    height:100px;
+    line-height: 100px;
+    float: left;
+    font-size:25px;
+    color:white;
+}
+
+.nav .main{
+    margin-left: 60px;
+    height:100px;
+    line-height: 100px;
+    float: left;
+    font-size:25px;
+
+}
+
+
+.nav .user{
+    margin: 0 16px 0 60px;
+    height:100px;
+    line-height: 100px;
+    float: right;
+    font-size:25px;
+}
+
+
+.shouye{
+    text-decoration: none;
+    margin:0 12px;
+    color: black;
+    padding:30px;
+    /* background-color: aquamarine; */
+}
+
+.shouye:hover{
+    color:red;   /*是鼠标移动到上面变色 */
+}
+
+#denglu{
+    text-decoration: none;
+    margin:0 12px;
+    color:black;
+    padding:30px;
+    /* background-color: aquamarine; */
+}
+
+#denglu:hover{
+    color:red;
+}
+
+
+/* 底部 */
+
+.footer {
+    width: 100%;
+    height: 392px;
+    background:whitesmoke;
+    overflow: hidden;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 41px;
+}
+
+.content .left {
+    width: 490px;
+    height: 351px;
+    float: left;
+    border-right: 1px solid #c8c8c8;
+}
+
+.content .left p {
+    margin-bottom: 27px;
+    line-height: 24px;
+}
+
+.content .left .p1 {
+    margin-top: 24px;
+    background: url("../image/南京工业大学小图标.png") no-repeat left;
+}
+
+.content .left .p2 {
+    background: url("../image/电话.jpg") no-repeat left;
+}
+
+.content .left .p3 {
+    background: url("../image/电话.jpg") no-repeat left;
+}
+
+.content .left .p4 {
+    background: url("../image/邮箱.jpg") no-repeat left;
+}
+
+.content .left .p5 {
+    background: url("../image/qq.png") no-repeat left;
+}
+
+.content .left span {
+    font-size: 15px;
+    padding-left: 47px;
+}
+
+.content .center {
+    width:380px;
+    height:351px;
+    float: left;
+    position: relative;
+    background: url('../image/微信.jpg') no-repeat center center;
+}
+
+.content .center img {
+    display: block;
+    margin-top: 28px;
+    margin-left:74px;
+}
+
+.content .center p {
+    position: absolute;
+    left: 160px;
+    top: 276px;
+    font-size: 12px;
+    color: #756e66;
+}
+
+.content .right {
+    width: 329px;
+    height: 351px;
+    float: right;
+}
+
+.content li:first-child {
+    margin-bottom: 15px;
+}
+
+.content input {
+    height: 40px;
+    width: 307px;
+    font-size: 14px;
+    color: #fff;
+    background: #bbb;
+    padding-left: 22px;
+    margin-bottom: 8px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.content li textarea {
+    padding: 19px 22px 0 22px;
+    width: 285px;
+    height: 72px;
+    font-size: 14px;
+    background: #bbb;
+    margin-bottom: 6px;
+}
+
+.content li:last-child input {
+    font-size: 16px;
+    width: 328px;
+    color: #fff;
+    background: #c92007;
+}
+
+
+/* 结束 */
+
+.end {
+    width: 100%;
+    line-height: 50px;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    background: #dadada;
+}

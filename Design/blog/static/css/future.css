@@ -1,0 +1,41 @@
+body {
+    font-size: 12px;
+    line-height: 160%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    color: #666;
+    text-decoration: none;
+    background: #efefef;
+    letter-spacing: normal;
+    text-align: left;
+    word-spacing: normal;
+    white-space: normal;
+    display: block;
+    clear: both;
+    float: none;
+    width: auto;
+    position: static;
+    height: auto;
+    top: auto;
+    clip: rect(auto, auto, auto, auto);
+}
+
+
+.future_main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.team {
+    float: left;
+    width: 898px;
+    background: white;
+    /* border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7; */
+    padding: 20px;
+    /*background-color:whitesmoke;*/
+}

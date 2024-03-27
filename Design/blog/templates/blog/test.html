@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>{%load static%}
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <title>训练</title>
+    <link rel="shortcut icon" href="{% static 'images/南京工业大学小图标.png' %}">
+    <link rel="stylesheet" href="{%static 'css/log.css' %}">
+    <link rel="stylesheet" href="{%static 'css/semantic.css' %}">
+</head>
+<body class="register">
+    <div class="ui center aligned grid" style="margin-top: 200px">
+        <div class="ui six wide column">
+            <h1 class="ui teal header"><font color="black">训练嘿</font></h1>
+            <div class="ui segment">
+                <div class="ui content">
+                    <form class="ui form" method="post" action="{%url 'register'%}"  enctype="multipart/form-data">
+                        <div class="field">
+                               <p>kmnc:{{ kmnc2}}</p>
+                               <p>snac:{{ snac2}}</p>
+                            <p>nbc:{{ nbc2}}</p>
+                                <p>tknc:{{ tknc2}}</p>
+                        </div>
+                        <div class="field">
+
+<!--                        <p>snac:{{ snac2}}</p>-->
+
+                        </div>
+                        <div class="field">
+<!--                        <p>nbc:{{ nbc2}}</p>-->
+
+                        </div>
+                        <div class="field">
+<!--                        <p>tknc:{{ tknc2}}</p>-->
+                        </div>
+
+                        训练结束，数据将保存在个人中心！！
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

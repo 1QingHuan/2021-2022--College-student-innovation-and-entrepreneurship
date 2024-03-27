@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="shortcut icon" href="{% static 'css/images/南京工业大学小图标.png' %}">
+    <link rel="stylesheet" href="{%static 'css/log.css' %}">
+    <link rel="stylesheet" href="{%static 'css/semantic.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+</head>
+<body class="login">
+    <div class="ui center aligned grid" style="margin-top: 200px">
+        <div class="ui six wide column">
+
+            <div class="ui segment">
+                <div class="ui content">
+    <form class="ui large form" method="post" enctype="multipart/form-data">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <input type="text" name="modelname" placeholder="请输入模型名称">
+
+          </div>
+            <div class="ui left icon input">
+
+            <input type="file" name="model" placeholder="model"><br>
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <input type="text" name="mnistname" placeholder="请输入数据集名称">
+          </div>
+            <div class="ui left icon input">
+           <input type="file" name="mnist" placeholder="mnist"><br>
+          </div>
+        </div>
+
+      </div>
+<button class="ui fluid large teal button" type="submit">提交</button>
+      <div class="ui error message"></div>
+    </form>
+
+    <div class="ui message">
+
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构性覆盖的深度学习测试系统</title>
+    <link rel="shortcut icon" href="{% static 'image/南京工业大学小图标.png' %}">
+	<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap-theme.css'%}"  >
+    <link rel="stylesheet"  href="{% static 'css/team_intr.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/common.css' %}">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="ahead" style="background-color:#f0f1f6 ;">
+        <p>结构性覆盖的深度学习测试充分性系统</p>
+
+        <p >NEW-BOY团队</p>
+    </div>
+
+   <div class="nav clearfix" style="background-color:white;">
+{#        <div class="logo">#}
+{#            <img src="2.jpg" alt="青年">#}
+{#        </div>#}
+
+       <div class="main">
+                  <a class="shouye"  href="{% url 'index' %}">首页 </a>
+              <a class="shouye " href="{% url 'team' %}">团队介绍 </a>
+              <a class="shouye " href="{% url 'research' %}">研究内容 </a>
+{#              <a class="shouye " href="{% url 'future' %}">未来愿景</a>#}
+            </div>
+
+            <div class="user">
+                <a id="denglu" href="{% url 'login' %}">登录吧</a>
+            </div>
+            <div class="user">
+                <a id="denglu" href="{% url 'register' %}">注册</a>
+            </div>
+
+   </div>
+
+
+   <!-- 研究内容 -->
+  <div class="team_intro_main">
+   <div class="team">
+
+    <div class="person_desc">
+        <div class="person_left">
+            <div class="person_photo">
+                <img src="{% static 'image/耿天羽.png' %}" alt="">
+            </div>
+        </div>
+        <div class="person_right">
+            <ul>
+                <li><span class="red1" style="color:black">耿天羽</span> &nbsp;&nbsp;&nbsp;
+                <li><strong>学院：</strong>&nbsp;&nbsp;计算机科学与技术学院</li>
+            </ul>
+            <div class="person_right_dp">
+                <strong>专业：</strong>&nbsp;&nbsp;<p>人工智能</p>                                                                <strong>个人简介：</strong>
+                <p>1.2021-2022学年第一学期获三等奖学金</p><p>2.“展望杯”羽毛球赛男子双打亚军</p><p>3.第一届“创芯杯”新生辩论赛冠军，决赛最佳辩手</p><p>4.大一学年以第一负责人身份开展大创项目</p><p>5.电子琴八级，爱好吉他</p>                <br />
+
+                                                            </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="team">
+
+    <div class="person_desc">
+        <div class="person_left">
+            <div class="person_photo" >
+                <img src="{% static 'image/邹杰.png' %}" style="width: 150px;height: 330px">
+            </div>
+        </div>
+        <div class="person_right">
+            <ul>
+                <li><span class="red1" style="color:black">邹杰</span> &nbsp;&nbsp;&nbsp;
+                <li><strong>学院：</strong>&nbsp;&nbsp;计算机科学与技术学院</li>
+            </ul>
+            <div class="person_right_dp">
+                <strong>专业：</strong>&nbsp;&nbsp;<p>人工智能</p>                                                                <strong>个人简介：</strong>
+                <p>1.2021-2022学年第一学期获三等奖学金</p>            <br />
+
+                                                            </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="team">
+
+    <div class="person_desc">
+        <div class="person_left">
+            <div class="person_photo">
+                <img src="{% static 'image/王兴亚.PNG' %}" alt="">
+            </div>
+        </div>
+        <div class="person_right">
+            <ul>
+                <li><span class="red1" style="color:black">王兴亚</span> &nbsp;&nbsp;&nbsp;
+                <li><strong>学院：</strong>&nbsp;&nbsp;计算机科学与技术学院</li>
+            </ul>
+            <div class="person_right_dp">
+                <strong>职称：</strong>&nbsp;&nbsp;<p>副教授</p>                                                                <strong>个人简介：</strong>
+                               <br />
+
+                                                            </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="team">
+
+    <div class="person_desc">
+        <div class="person_left">
+            <div class="person_photo">
+                <img src="{% static 'image/flc.PNG' %}" alt="">
+            </div>
+        </div>
+        <div class="person_right">
+            <ul>
+                <li><span class="red1" style="color:black">冯立超</span> &nbsp;&nbsp;&nbsp;
+                <li><strong>学院：</strong>&nbsp;&nbsp;计算机科学与技术学院</li>
+            </ul>
+            <div class="person_right_dp">
+                <strong>学历</strong>&nbsp;&nbsp;<p>研究生</p>
+                 <strong>个人简介：</strong>
+             <br />
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="content">
+            <div class="left">
+                <p class="p1" ><span>南京工业大学 计算机科学与技术学院</span></p>
+                <p class="p2" ><span>耿天羽：19552711698</span></p>
+                <p class="p3"><span>邹杰：18362327203</span></p>
+                <p class="p4"><span>联系邮箱：2107165871@qq.com</span></p>
+                <p class="p5"><span>QQ:2107165871或914645408</span></p>
+            </div>
+            <div class="center">
+                <img src="{% static 'image/微信.jpg' %}" alt="">
+                <p>微信二维码</p>
+            </div>
+{#            <div class="right">#}
+{#                <ul>#}
+{#                    <li>留言 / Leave a message</li>#}
+{#                    <li><input type="text" placeholder="姓名"></li>#}
+{#                    <li><input type="text" placeholder="电话"></li>#}
+{#                    <li><textarea name="" id="" placeholder="留言内容"></textarea></li>#}
+{#                    <li><input type="submit" value="提交查询"></li>#}
+{#                </ul>#}
+{#            </div>#}
+        </div>
+    </div>
+    <div class="end">
+        <span>南京工业大学</span>
+    </div>
+
+</body>
+</html>

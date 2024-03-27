@@ -1,0 +1,254 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0  user-scale">
+    <title>结构性覆盖的深度学习测试充分性系统</title>
+    <base href="/">
+    <link rel="shortcut icon" href="{% static 'image/南京工业大学小图标.png' %}">
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap-theme.css'%}"  >
+    <link rel="stylesheet" href="{% static 'css/newindex.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+</head>
+<body>
+    <div class="AI_header">
+        <img src="{% static 'image/index_header.jpg' %}" alt="">
+{#        class="header_img"#}
+        <nav class="AI_header_content1">
+          <ul class="AI-header——content">
+                  <li class="header——content">
+                    <span>什么是人工智能 (AI)？</span>
+                </li>
+                  <li class="header——content">
+                    <span >什么是深度学习智能测试？</span>
+                </li>
+          </ul>
+
+            <div class="AI_header_content2_h1">
+                <span>人工智能</span>
+            </div>
+
+            <div>
+                <p class="header_end">智能引领未来</p>
+            </div>
+        </nav>
+    </div>
+
+    <div class="nav clearfix" >
+{#        <div class="logo">#}
+{#            <img src="{% static 'image/index_1.jpg' %}" alt="青年">#}
+{#        </div>#}
+
+          <div class="main">
+              <a class="shouye"  href="{% url 'index' %}">首页 </a>
+              <a class="shouye " href="{% url 'team' %}">团队介绍 </a>
+              <a class="shouye " href="{% url 'research' %}">研究内容 </a>
+{#              <a class="shouye " href="{% url 'future' %}">未来愿景</a>#}
+            </div>
+
+            <div class="user">
+                <a id="denglu" href="{% url 'login' %}">登录吧</a>
+            </div>
+            <div class="user">
+                <a id="denglu" href="{% url 'register' %}">注册</a>
+            </div>
+
+   </div>
+
+    <div id="content1" class="clearfix wrap">
+        <div id="sidebar">
+            <div class="title">人工智能</div>
+        <dl class="list_dl">
+            <dt class="list_dt current" >
+            <span class="_after"></span>
+            <p ><a href="#yjbj" style="text-decoration:none;color:grey;">什么是人工智能？</a></p>
+             </dt>
+
+        <dt class="list_dt">
+            <span class="_after"></span>
+            <p><a href="#yjmb" style="text-decoration:none;color:grey;">人工智能的类型 - 弱 AI 与强 AI</a></p>
+        </dt>
+
+        <dt class="list_dt" >
+            <span class="_after"></span>
+            <p><a href="#tscs" style="text-decoration:none;color:grey;">深度学习与机器学习</a></p>
+        </dt>
+
+        <dt class="list_dt" >
+            <span class="_after"></span>
+            <p>  <a href="#jslx" style="text-decoration:none;color:grey;">人工智能应用</a>  </p>
+        </dt>
+        </dl>
+        </div>
+
+    <div class="mainRight">
+                    <div class="title " >
+                        <h1>人工智能</h1>
+                        <span class="span">
+                            人工智能利用计算机和机器模仿人类思维的问题解决和决策制定能力。
+                        </span>
+                    </div>
+
+
+        <div class="txt">
+            <div id="vsb_content_1001_u51">
+                <div id="vsb_content">
+
+            <dt>
+            <p id="yjbj" class="MsoNormal" style="font-size: 30px " >
+             什么是人工智能？
+            </p>
+            &nbsp;&nbsp;
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; mso-char-indent-count: 2.0;">
+                虽然在过去数十年中，人工智能 (AI) 的一些定义不断出现，但 John McCarthy 在 2004 年的论文 (PDF, 106 KB) (链接位于 IBM 外部 ) 中给出了以下定义：“这是制造智能机器，特别是智能计算机程序的科学和工程。 它与使用计算机了解人类智能的类似任务有关，但 AI 不必局限于生物可观察的方法”。
+             </p>
+             &nbsp;&nbsp;
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+                然而，在这个定义出现之前数十年，人工智能对话的诞生要追溯到艾伦·图灵 (Alan Turing) 于 1950 年发表的开创性工作：“计算机械和智能” (PDF，89.8 KB)（链接位于 IBM 外部）。 在这篇论文中，通常被誉为“计算机科学之父”的图灵提出了以下问题：“机器能思考吗？”由此出发，他提出了著名的“图灵测试”，由人类审查员尝试区分计算机和人类的文本响应。 虽然该测试自发表之后经过了大量的审查，但它仍然是 AI 历史的重要组成部分，也是一种在哲学中不断发展的概念，因为它利用了有关语言学的想法。
+             </p>
+             &nbsp;&nbsp;
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+                Stuart Russell 和 Peter Norvig 随后发表了“人工智能：现代方法”（链接位于 IBM 外部），成为 AI 研究的主要教科书之一。 在该书中，他们探讨了 AI 的四个潜在目标或定义，按照理性以及思维与行动将 AI 与计算机系统区分开来：
+             </p>
+             &nbsp;&nbsp;
+             <h3>人类方法：</h3>
+             <ul>
+                <li>
+                    ———像人类一样思考的系统
+                </li>
+                &nbsp;&nbsp;
+                <li>
+                    ———像人类一样行动的系统
+                </li>
+             </ul>
+             &nbsp;&nbsp;
+             <h3>理性方法：</h3>
+             <ul>
+                <li>
+                    ———理性思考的系统
+                </li>
+                &nbsp;&nbsp;
+                <li>
+                    ———像人类一样行动的系统
+                </li>
+             </ul>
+             &nbsp;&nbsp;
+             <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+                艾伦·图灵的定义可归入“像人类一样行动的系统”类别。
+             </p>
+             &nbsp;&nbsp;
+             <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+                以最简单的形式而言，人工智能是结合了计算机科学和强大数据集的领域，能够实现问题解决。 它还包括机器学习和深度学习等子领域，这些子领域经常与人工智能一起提及。 这些学科由 AI 算法组成，这些算法旨在创建基于输入数据进行预测或分类的专家系统。
+             </p>
+             &nbsp;&nbsp;
+             <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+                目前，仍有许多围绕 AI 发展的炒作，市场上任何新技术的出现都会引发热议。 正如Gartner 的炒作周期（链接位于 IBM 外部）中所指出的，包括自动驾驶汽车和个人助理在内的产品创新遵循：“创新的典型发展进程，从超高热情到幻想破灭期，最终了解创新在市场或领域中的相关性和作用”。正如 Lex Fridman 在其 2019 年的 MIT 讲座（链接位于 IBM 外部）中所指出的那样，我们正处于泡沫式期望的颠峰，逐渐接近幻灭槽。
+             </p>
+             &nbsp;&nbsp;
+             <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+                随着对话围绕 AI 的伦理道德展开，我们可以开始看到幻灭槽初见端倪。 要了解有关 IBM 在 AI 伦理道德对话中的立场的更多信息，请在此阅读详细内容。
+             </p>
+
+             &nbsp;&nbsp;
+             <p class="MsoNormal" style="border-bottom: 1px solid #DDD;">
+             </p>
+
+        </dt>
+            &nbsp;&nbsp;
+            </dt>
+            <p id="yjmb" class="MsoNormal" style="font-size: 30px">
+                人工智能的类型 - 弱 AI 与强 AI
+            </p>
+            &nbsp;&nbsp;
+             <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+                弱 AI 也称为狭义的 AI 或人工狭义智能 (ANI)，是经过训练的 AI，专注于执行特定任务。 弱 AI 推动了目前我们周围的大部分 AI。“范围窄”可能是此类 AI 更准确的描述符，因为它其实并不弱，支持一些非常强大的应用，如 Apple 的 Siri、Amazon 的 Alexa 以及 IBM Watson 和自主车辆。
+             </p>
+
+             &nbsp;&nbsp;
+             <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+                强 AI 由人工常规智能 (AGI) 和人工超级智能 (ASI) 组成。 人工常规智能 (AGI) 是 AI 的一种理论形式，机器拥有与人类等同的智能；它具有自我意识，能够解决问题、学习和规划未来。 人工超级智能 (ASI) 也称为超级智能，将超越人类大脑的智力和能力。 虽然强 AI 仍完全处于理论阶段，还没有实际应用的例子，但这并不意味着 AI 研究人员不在探索它的发展。 ASI 的最佳例子可能来自科幻小说，如 HAL、超人以及《2001 太空漫游》电影中的无赖电脑助手。
+             </p>
+
+             &nbsp;&nbsp;
+             <p class="MsoNormal" style="border-bottom: 1px solid #DDD;">
+             </p>
+
+            <p id="tscs" class="MsoNormal" style="font-size: 30px">
+                深度学习与机器学习
+            </p>
+        </p>
+        &nbsp;&nbsp;
+         <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+            由于深度学习和机器学习这两个术语往往可互换使用，因此必须注两者之间的细微差别。 如上所述，深度学习和机器学习都是人工智能的子领域，深度学习实际上是机器学习的一个子领域。
+         </p>
+         &nbsp;&nbsp;
+         <img src="机器学习1.jpg" alt="">
+         &nbsp;&nbsp;
+         &nbsp;&nbsp;
+         <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+            深度学习实际上由神经网络组成。深度学习中的“深度”是指由三层以上组成的神经网络（包括输入和输出）可被视为深度学习算法。 这通常如下图表示：
+         </p>
+         &nbsp;&nbsp;
+           <img src="机器学习2.jpg" alt="">
+         &nbsp;&nbsp;
+         <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+            深度学习和机器学习的不同之处在于每个算法如何学习。 深度学习可以自动执行过程中的大部分特征提取，消除某些必需的人工干预，并能够使用更大的数据集。 可将深度学习视为“可扩展的机器学习”，正如 Lex Fridman 在同一 MIT 讲座中所指出的那样。 常规的机器学习，或叫做"非深度"机器学习，更依赖于人工干预进行学习。 人类专家确定特征的层次结构，以了解数据输入之间的差异，通常需要更多结构化数据以用于学习。
+         </p>
+
+         &nbsp;&nbsp;
+         <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+            "深度"机器学习则可以利用标签化的数据集，也称为监督式学习，以确定算法，但不一定必须使用标签化的数据集。 它可以原始格式（例如文本、图像）采集非结构化数据，并且可以自动确定区分不同类别数据的特征的层次结构。 与机器学习不同，它不需要人工干预数据的处理，使我们能够以更有趣的方式扩展机器学习。
+         </p>
+
+         &nbsp;&nbsp;
+         <p class="MsoNormal" style="border-bottom: 1px solid #DDD;">
+         </p>
+        <p id="tscs" class="MsoNormal" style="font-size: 25px">
+            <p id="jslx" class="MsoNormal" style="font-size: 30px">
+                人工智能应用
+            </p>
+            &nbsp;&nbsp;
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%;  mso-char-indent-count: 2.0;">
+                目前，AI 系统存在大量的现实应用。 下面是一些最常见的示例：
+            </p>
+            &nbsp;&nbsp;
+            <ul>
+                <li >
+                <b>1.语音识别</b>：也称为自动语音识别 (ASR)、计算机语音识别或语音到文本，能够使用自然语言处理 (NLP)，将人类语音处理为书面格式。许多移动设备将语音识别结合到系统中以进行语音搜索，例如： Siri，或提供有关文本的更多辅助功能。
+                </li>
+                &nbsp;&nbsp;
+                <li >
+                    <b>2.客户服务</b>：在线聊天机器人正逐步取代客户互动中的人工客服。 他们回答各种主题的常见问题 (FAQ) ，例如送货，或为用户提供个性化建议，交叉销售产品，提供用户尺寸建议，改变了我们对网站和社交媒体中客户互动的看法。 示例包括具有虚拟客服的电子商务站点上的聊天机器人、消息传递应用（例如 Slack 和 Facebook Messenger）以及虚拟助理和语音助手通常执行的任务。
+                </li>
+                    &nbsp;&nbsp;
+                <li >
+                <b>3.计算机视觉</b>：该 AI 技术使计算机和系统能够从数字图像、视频和其他可视输入中获取有意义的信息，并基于这些输入采取行动。 这种提供建议的能力将其与图像识别任务区分开来。 计算机视觉由卷积神经网络提供支持，应用在社交媒体的照片标记、医疗保健中的放射成像以及汽车工业中的自动驾驶汽车等领域。
+                </li>
+                    &nbsp;&nbsp;
+                <li >
+                    <b>4.推荐引擎</b>：AI 算法使用过去的消费行为数据，帮助发现可用于制定更有效的交叉销售策略的数据趋势。 这用于在在线零售商的结帐流程中向客户提供相关的附加建议。
+                </li>
+                &nbsp;&nbsp;
+                <li >
+                    <b>5.自动股票交易</b>：旨在用于优化股票投资组合，AI 驱动的高频交易平台每天可产生成千上万个甚至数以百万计的交易，无需人工干预。
+                </li>
+                    &nbsp;&nbsp;
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+</body>
+</html>
